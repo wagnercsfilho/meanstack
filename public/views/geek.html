@@ -1,0 +1,25 @@
+<!-- public/views/geek.html -->
+
+<div class="jumbotron text-center">
+	<h1>Geek City</h1>
+
+	<p>{{ tagline }}</p>
+
+<table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="geek in geeks">
+          <td>{{ geek._id }}</td>
+          <td>{{ geek.name }}</td>
+          <td>{{ geek.Location }}</td>
+        </tr>
+      </tbody>
+</table>
+
+</div>
